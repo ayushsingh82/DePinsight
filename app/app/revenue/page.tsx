@@ -2,7 +2,11 @@ export default function Revenue() {
   return (
     <div>
       <h1 className="text-3xl font-bold text-white mb-4">Revenue</h1>
-      <div className="bg-[#141414] border border-gray-800 rounded-lg shadow-md p-6">
+      <div className="bg-[#141414] border border-gray-800 shadow-md p-6 relative">
+        <div className="absolute top-0 left-0 w-4 h-4 border-l-2 border-t-2 border-[#EBF73F]"></div>
+        <div className="absolute top-0 right-0 w-4 h-4 border-r-2 border-t-2 border-[#EBF73F]"></div>
+        <div className="absolute bottom-0 left-0 w-4 h-4 border-l-2 border-b-2 border-[#EBF73F]"></div>
+        <div className="absolute bottom-0 right-0 w-4 h-4 border-r-2 border-b-2 border-[#EBF73F]"></div>
         <h2 className="text-xl font-semibold text-white mb-4">Revenue Statistics</h2>
         <div className="space-y-4">
           <div className="flex justify-between items-center pb-4 border-b border-gray-800">

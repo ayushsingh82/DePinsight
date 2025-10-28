@@ -12,7 +12,7 @@ export default function AppLayout({
       <div className="w-64 bg-black border-r border-gray-800 flex flex-col">
         <div className="p-6 border-b border-gray-800">
           <Link href="/" className="text-2xl font-bold text-white hover:text-[#EBF73F] transition duration-150">
-            My App
+            NodeOps
           </Link>
         </div>
         <nav className="flex-1 py-4">
