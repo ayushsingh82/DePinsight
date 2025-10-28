@@ -7,28 +7,30 @@ export default function AppLayout({
   children: React.ReactNode;
 }) {
   return (
-    <div className="flex h-screen bg-gray-100">
+    <div className="flex h-screen bg-black">
       {/* Sidebar */}
-      <div className="w-64 bg-gray-800 text-white flex flex-col">
-        <div className="p-6 border-b border-gray-700">
-          <h1 className="text-2xl font-bold">My App</h1>
+      <div className="w-64 bg-black border-r border-gray-800 flex flex-col">
+        <div className="p-6 border-b border-gray-800">
+          <Link href="/" className="text-2xl font-bold text-white hover:text-[#EBF73F] transition duration-150">
+            My App
+          </Link>
         </div>
         <nav className="flex-1 py-4">
           <Link
             href="/app"
-            className="block px-6 py-3 text-gray-300 hover:bg-gray-700 hover:text-white transition duration-150"
+            className="block px-6 py-3 text-white hover:bg-[#141414] transition duration-150"
           >
             Dashboard
           </Link>
           <Link
             href="/app/revenue"
-            className="block px-6 py-3 text-gray-300 hover:bg-gray-700 hover:text-white transition duration-150"
+            className="block px-6 py-3 text-white hover:bg-[#141414] transition duration-150"
           >
             Revenue
           </Link>
           <Link
             href="/app/shares"
-            className="block px-6 py-3 text-gray-300 hover:bg-gray-700 hover:text-white transition duration-150"
+            className="block px-6 py-3 text-white hover:bg-[#141414] transition duration-150"
           >
             Shares
           </Link>
@@ -36,7 +38,7 @@ export default function AppLayout({
       </div>
 
       {/* Main Content */}
-      <div className="flex-1 overflow-auto">
+      <div className="flex-1 overflow-auto bg-black">
         <div className="p-8">{children}</div>
       </div>
     </div>
