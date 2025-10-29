@@ -34,6 +34,12 @@ export default function AppLayout({
           >
             Shares
           </Link>
+          <Link
+            href="/app/dune"
+            className="block px-6 py-3 text-white hover:bg-[#141414] transition duration-150"
+          >
+            Dune
+          </Link>
         </nav>
       </div>
 
