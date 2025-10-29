@@ -1,4 +1,7 @@
+"use client";
+
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import "./layout.css";
 
 export default function AppLayout({
@@ -6,6 +9,15 @@ export default function AppLayout({
 }: {
   children: React.ReactNode;
 }) {
+  const pathname = usePathname();
+
+  const navLinks = [
+    { href: "/app", label: "Dashboard" },
+    { href: "/app/revenue", label: "Revenue" },
+    { href: "/app/shares", label: "Shares" },
+    { href: "/app/dune", label: "Dune" },
+  ];
+
   return (
     <div className="flex h-screen bg-black">
       {/* Sidebar */}
@@ -16,30 +28,22 @@ export default function AppLayout({
           </Link>
         </div>
         <nav className="flex-1 py-4">
-          <Link
-            href="/app"
-            className="block px-6 py-3 text-white hover:bg-[#141414] transition duration-150"
-          >
-            Dashboard
-          </Link>
-          <Link
-            href="/app/revenue"
-            className="block px-6 py-3 text-white hover:bg-[#141414] transition duration-150"
-          >
-            Revenue
-          </Link>
-          <Link
-            href="/app/shares"
-            className="block px-6 py-3 text-white hover:bg-[#141414] transition duration-150"
-          >
-            Shares
-          </Link>
-          <Link
-            href="/app/dune"
-            className="block px-6 py-3 text-white hover:bg-[#141414] transition duration-150"
-          >
-            Dune
-          </Link>
+          {navLinks.map((link) => {
+            const isActive = pathname === link.href;
+            return (
+              <Link
+                key={link.href}
+                href={link.href}
+                className={`block px-6 py-3 transition duration-150 ${
+                  isActive
+                    ? "bg-[#EBF73F] text-black"
+                    : "text-white hover:bg-[#EBF73F] hover:text-black"
+                }`}
+              >
+                {link.label}
+              </Link>
+            );
+          })}
         </nav>
       </div>
 
@@ -50,4 +54,3 @@ export default function AppLayout({
     </div>
   );
 }
-
