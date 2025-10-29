@@ -10,6 +10,15 @@ interface IncomeRowProps {
 }
 
 function IncomeRow({ label, q4, q3, q2, q1, yearly }: IncomeRowProps) {
+  if (yearly) {
+    return (
+      <div className="grid grid-cols-2 gap-4 py-3 border-b border-gray-800 last:border-b-0">
+        <div className="text-sm text-gray-400 font-medium">{label}</div>
+        <div className="text-sm text-white font-mono text-right">{yearly}</div>
+      </div>
+    );
+  }
+  
   return (
     <div className="grid grid-cols-5 gap-4 py-3 border-b border-gray-800 last:border-b-0">
       <div className="text-sm text-gray-400 font-medium">{label}</div>
@@ -17,11 +26,6 @@ function IncomeRow({ label, q4, q3, q2, q1, yearly }: IncomeRowProps) {
       {q3 && <div className="text-sm text-white font-mono text-right">{q3}</div>}
       {q2 && <div className="text-sm text-white font-mono text-right">{q2}</div>}
       {q1 && <div className="text-sm text-white font-mono text-right">{q1}</div>}
-      {yearly && (
-        <>
-          <div className="text-sm text-white font-mono text-right col-span-4">{yearly}</div>
-        </>
-      )}
     </div>
   );
 }

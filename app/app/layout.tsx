@@ -16,6 +16,7 @@ export default function AppLayout({
     { href: "/app/revenue", label: "Revenue" },
     { href: "/app/shares", label: "Shares" },
     { href: "/app/dune", label: "Dune" },
+    { href: "/app/defillama", label: "DefiLlama" },
   ];
 
   return (
