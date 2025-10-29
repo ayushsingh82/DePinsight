@@ -37,7 +37,7 @@ export default function AppLayout({
                 className={`block px-6 py-3 transition duration-150 ${
                   isActive
                     ? "bg-[#EBF73F] text-black"
-                    : "text-white hover:bg-[#EBF73F] hover:text-black"
+                    : "text-white"
                 }`}
               >
                 {link.label}

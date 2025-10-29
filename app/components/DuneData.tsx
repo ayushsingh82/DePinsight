@@ -130,6 +130,48 @@ export default function DuneData() {
           username="nodeops"
           timestamp="18h"
         />
+        
+        <MetricCard
+          title="Storage (In GBs)"
+          value="59,773"
+          username="nodeops"
+          timestamp="18h"
+        />
+        
+        <MetricCard
+          title="Total Deployments"
+          value="24,242"
+          username="nodeops"
+          timestamp="18h"
+        />
+        
+        <MetricCard
+          title="Memory (In GBs)"
+          value="3,607"
+          username="nodeops"
+          timestamp="18h"
+        />
+        
+        <MetricCard
+          title="Providers Onboarded"
+          value="1,025"
+          username="nodeops"
+          timestamp="18h"
+        />
+        
+        <MetricCard
+          title="Active Machines"
+          value="1,202"
+          username="nodeops"
+          timestamp="18h"
+        />
+        
+        <MetricCard
+          title="Machines Onboarded"
+          value="5,300"
+          username="nodeops"
+          timestamp="18h"
+        />
       </div>
 
       {/* Project Overview Section */}
@@ -214,16 +256,19 @@ export default function DuneData() {
               label="Arbitrum"
               address="0x2F714d7b9A035d4ce24af8d9b6091c07E37f43Fb"
               chain="arbitrum"
+              isToken={true}
             />
             <ContractAddress
               label="Ethereum"
               address="0x2F714d7b9A035d4ce24af8d9b6091c07E37f43Fb"
               chain="ethereum"
+              isToken={true}
             />
             <ContractAddress
               label="Binance Smart Chain"
               address="0x2F714d7b9A035d4ce24af8d9b6091c07E37f43Fb"
               chain="bsc"
+              isToken={true}
             />
           </div>
         </div>
