@@ -21,6 +21,13 @@ import {
 
 const COLORS = ["#EBF73F", "#4ADE80", "#3B82F6", "#F59E0B", "#EF4444", "#A855F7"];
 
+// Type for pie chart label
+interface PieLabelProps {
+  name: string;
+  percent: number;
+  [key: string]: any;
+}
+
 // Revenue data from Dune
 const monthlyRevenueData = [
   { month: "Jan", revenue: 110204 },
@@ -177,7 +184,7 @@ export default function Analytics() {
                     cx="50%"
                     cy="50%"
                     labelLine={false}
-                    label={({ name, percent }) => `${name}: ${(percent * 100).toFixed(1)}%`}
+                    label={({ name, percent }: any) => `${name}: ${(percent * 100).toFixed(1)}%`}
                     outerRadius={100}
                     fill="#8884d8"
                     dataKey="value"
@@ -365,7 +372,7 @@ export default function Analytics() {
                   cx="50%"
                   cy="50%"
                   labelLine={false}
-                  label={({ name, percent }) => `${name}: ${(percent * 100).toFixed(1)}%`}
+                  label={({ name, percent }: any) => `${name}: ${(percent * 100).toFixed(1)}%`}
                   outerRadius={120}
                   fill="#8884d8"
                   dataKey="value"
