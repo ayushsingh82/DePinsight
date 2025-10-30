@@ -10,23 +10,23 @@ interface MetricCardProps {
 
 function MetricCard({ title, value, description, username, timestamp }: MetricCardProps) {
   return (
-    <div className="bg-[#141414] border border-gray-700 p-6 hover:border-[#EBF73F] transition duration-150 relative">
+    <div className="bg-[#141414] border border-gray-700 p-6 hover:bg-black transition duration-150 relative group">
       <div className="absolute top-0 left-0 w-3 h-3 border-l-2 border-t-2 border-[#EBF73F]"></div>
       <div className="absolute top-0 right-0 w-3 h-3 border-r-2 border-t-2 border-[#EBF73F]"></div>
       <div className="absolute bottom-0 left-0 w-3 h-3 border-l-2 border-b-2 border-[#EBF73F]"></div>
       <div className="absolute bottom-0 right-0 w-3 h-3 border-r-2 border-b-2 border-[#EBF73F]"></div>
-      <div className="text-sm text-gray-400 mb-2">{title}</div>
+      <div className="text-sm text-gray-400 group-hover:text-white mb-2 transition-colors">{title}</div>
       <div className="text-3xl font-bold text-white mb-3">{value}</div>
       {description && (
-        <div className="text-xs text-gray-500 mb-2">
+        <div className="text-xs text-gray-500 group-hover:text-white mb-2 transition-colors">
           {description}
         </div>
       )}
       {username && (
         <div className="flex items-center gap-2 mt-3 pt-3 border-t border-gray-800">
-          <span className="text-xs text-gray-500">@{username}</span>
+          <span className="text-xs text-gray-500 group-hover:text-white transition-colors">@{username}</span>
           {timestamp && (
-            <span className="text-xs text-gray-600">{timestamp}</span>
+            <span className="text-xs text-gray-600 group-hover:text-white transition-colors">{timestamp}</span>
           )}
         </div>
       )}
