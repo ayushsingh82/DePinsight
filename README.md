@@ -58,6 +58,8 @@ Track social engagement and community metrics:
 
 ## Getting Started
 
+### Development
+
 First, run the development server:
 
 ```bash
@@ -74,7 +76,50 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
+### Docker
+
+Build and run the application using Docker:
+
+```bash
+# Build the image
+docker build -t depinsight .
+
+# Run the container
+docker run -p 3000:3000 depinsight
+```
+
+Or use Docker Compose:
+
+```bash
+# Build and start
+docker-compose up --build
+
+# Run in detached mode
+docker-compose up -d
+
+# Stop the containers
+docker-compose down
+```
+
+The application will be available at [http://localhost:3000](http://localhost:3000)
+
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+
+## Tech Stack
+
+- **Framework**: Next.js 16.0.0
+- **UI Library**: React 19.2.0
+- **Styling**: Tailwind CSS 4.0
+- **Charts**: Recharts 3.3.0
+- **Animations**: Motion (Framer Motion) 12.23.24
+- **Icons**: Lucide React
+- **Language**: TypeScript 5
+
+## About NodeOps Network
+
+NodeOps Network is a decentralized infrastructure stack powering compute and AI workloads. It enables developers and enterprises to deploy, manage, and monetize compute services seamlessly. The protocol generates on-chain revenue from product subscriptions, deployment fees, and automated $NODE-to-credits conversions for workloads.
+
+**Category**: DePIN (Decentralized Physical Infrastructure)
 
 ## Learn More
 
