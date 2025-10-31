@@ -1,8 +1,60 @@
 # DePinsight
 
-A comprehensive analytics dashboard for DePIN protocols and blockchain infrastructure.
+**Vision:** Transforming DePIN analytics with real-time insights, empowering data-driven decisions in decentralized infrastructure.
+
+A comprehensive analytics dashboard built on NodeOps Network, providing insights into DePIN protocols and blockchain infrastructure.
 
 Built with [Next.js](https://nextjs.org) and bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+
+## Features
+
+DePinsight provides a comprehensive analytics experience with the following modules accessible through the sidebar:
+
+### 📊 **Dashboard**
+An overview of key metrics including total users, active sessions, and growth rate, providing a quick snapshot of platform health.
+
+### 💰 **Revenue**
+Detailed revenue analytics with real-time tracking of:
+- Total revenue breakdown
+- Monthly revenue trends
+- Growth percentage and forecasts
+- Quarterly and yearly income statements
+
+### 📈 **Token Metrics**
+Comprehensive token information including:
+- Real-time token price tracking (24h, 7d, 1Y changes)
+- Market data: Market cap, 24h volume, FDV
+- Token supply analytics (Circulating, Total, Max Supply)
+- Network status and holder information
+- Category classification (DePIN/Compute)
+
+### 📉 **Analytics**
+Multi-source analytics dashboard featuring:
+- **Overview Tab**: Token price charts, supply distribution, revenue trends
+- **Dune Analytics**: Network growth metrics, deployment trends, resource distribution
+- **DefiLlama Analytics**: Quarterly comparisons, income statements
+- Interactive charts and visualizations
+
+### 🔗 **Dune**
+Direct integration with Dune Analytics showing:
+- Total revenue and resource utilization
+- CPU, Memory, and Storage metrics
+- Network growth: Providers, Machines, Deployments
+- Contract addresses across multiple chains
+- Token contract information
+
+### 📊 **DefiLlama**
+Protocol-level financial data:
+- Protocol information and categorization
+- Quarterly and monthly income statements
+- Fees, revenue, and earnings breakdown
+- Revenue sources and payment models
+
+### 👥 **Shares**
+Track social engagement and community metrics:
+- Share activity across platforms (Twitter, LinkedIn, Facebook)
+- Audience engagement statistics
+- Community growth indicators
 
 ## Getting Started
 
