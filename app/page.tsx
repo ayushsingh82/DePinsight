@@ -29,7 +29,7 @@ export default function Home() {
       
       <div className="text-center space-y-8 max-w-3xl px-8">
         <TrueFocus 
-          sentence="NodeOps"
+          sentence="DePinsight"
           manualMode={false}
           blurAmount={5}
           borderColor="#EBF73F"
@@ -37,7 +37,7 @@ export default function Home() {
           pauseBetweenAnimations={1}
         />
         <p className="text-xl text-gray-300 leading-relaxed">
-          The ultimate Node-as-a-Service platform for DeFi and blockchain infrastructure, with $NODE at the heart of the ecosystem. NodeOps provides seamless node deployment, staking, security, and monitoring—empowering teams to scale, innovate, and thrive in the decentralized world.
+          The ultimate analytics platform for DePIN protocols and blockchain infrastructure. DePinsight provides comprehensive insights into revenue, metrics, network growth, and token analytics—empowering teams to make data-driven decisions in the decentralized world.
         </p>
         <Link
           href="/app"
