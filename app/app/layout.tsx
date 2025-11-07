@@ -14,6 +14,7 @@ export default function AppLayout({
   const navLinks = [
     { href: "/app", label: "Dashboard" },
     { href: "/app/search", label: "Search" },
+    { href: "/app/protocol-explorer", label: "Protocol Explorer" },
     { href: "/app/token-metrics", label: "Token Metrics" },
     { href: "/app/revenue", label: "Revenue" },
     { href: "/app/analytics", label: "Analytics" },
